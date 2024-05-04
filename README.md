@@ -1,6 +1,6 @@
 # Convert tweets exported from twitter-web-exporter to .MD files for Obsidian
 
-This currently is tested for bookmarks page.
+This currently is tested for bookmarked tweets.
 Many thanks to contributers of [twitter-web-exporter](https://github.com/prinsss/twitter-web-exporter) <3
 
 ## Output
