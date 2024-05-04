@@ -26,8 +26,8 @@ def json_to_md(json_file, output_dir):
 
             # Write metadata
             file.write("## Metadata\n")
-            file.write(f"- Author: [{tweet['name']}](https://twitter.com/{username})\n")
-            file.write(f"- Username: @{username}\n")
+            file.write(f"- Author: {tweet['name']}\n")
+            file.write(f"- Username: [@{username}](https://twitter.com/{username})\n")
             file.write(f"- Date: {formatted_date}\n")
             file.write(f"- URL: [Link]({tweet['url']})\n")
 
