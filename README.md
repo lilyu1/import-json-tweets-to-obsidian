@@ -1,7 +1,9 @@
 # Convert tweets exported from twitter-web-exporter to .MD files for Obsidian
 
-This currently is tested for bookmarked tweets.
+This currently is tested for bookmarked tweets. You may modify the line "Author:" to "Author::" to allow querying with Dataview.
+
 Many thanks to contributers of [twitter-web-exporter](https://github.com/prinsss/twitter-web-exporter) <3
+
 
 ## Output
 
@@ -15,7 +17,7 @@ Many thanks to contributers of [twitter-web-exporter](https://github.com/prinsss
 In CMD enter:
 `python script.py path\to\JSON`
 
-## To do/may do
+## May do
 - threads??
 - likes??
 - maybe turn into a plugin??
