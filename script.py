@@ -12,7 +12,8 @@ def json_to_md(json_file, output_dir):
 
     for tweet in data:
         tweet_id = tweet['id']
-        md_file = os.path.join(output_dir, f"tweet-{tweet_id}.md")
+        username = tweet['screen_name']
+        md_file = os.path.join(output_dir, f"{username}-{tweet_id}.md")
         with open(md_file, 'w') as file:
             # Format the date
             created_at = tweet['created_at']
@@ -25,8 +26,8 @@ def json_to_md(json_file, output_dir):
 
             # Write metadata
             file.write("## Metadata\n")
-            file.write(f"- Author: [{tweet['name']}](https://twitter.com/{tweet['screen_name']})\n")
-            file.write(f"- Username: @{tweet['screen_name']}\n")
+            file.write(f"- Author: [{tweet['name']}](https://twitter.com/{username})\n")
+            file.write(f"- Username: @{username}\n")
             file.write(f"- Date: {formatted_date}\n")
             file.write(f"- URL: [Link]({tweet['url']})\n")
 
